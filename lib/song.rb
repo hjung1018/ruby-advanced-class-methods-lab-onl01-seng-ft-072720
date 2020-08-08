@@ -46,5 +46,5 @@ end
 
   def self.new_from_filename(filename)
     song - self.new
-    split_filename = filename.split(filename)
+    split_filename = filename.chomp(".mp3").split(" - ")
 end
